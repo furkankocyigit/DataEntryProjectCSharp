@@ -34,5 +34,10 @@ namespace DataEntryProject
             txtZip.Clear();
             txtName.Focus();
         }
+
+        private void timTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
