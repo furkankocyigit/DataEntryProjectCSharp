@@ -1,0 +1,11 @@
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\bin\Debug\DataEntryProject.exe.config
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\bin\Debug\DataEntryProject.exe
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\bin\Debug\DataEntryProject.pdb
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.csproj.AssemblyReference.cache
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.frmDataEntry.resources
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.Properties.Resources.resources
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.csproj.GenerateResource.cache
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.csproj.CoreCompileInputs.cache
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.exe
+C:\Users\furkan.kocyigit\source\repos\DataEntryProject\obj\Debug\DataEntryProject.pdb
