@@ -42,9 +42,6 @@ namespace DataEntryProject
 
             txtTimer.Text = Convert.ToString(
                 new TimeSpan(elapsedTime.Hours,elapsedTime.Minutes,elapsedTime.Seconds));
-
-            
-
         }
 
         private void btnStart_Click(object sender, EventArgs e)
