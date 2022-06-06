@@ -38,10 +38,10 @@ namespace DataEntryProject
         private void timTimer_Tick(object sender, EventArgs e)
         {
             elapsedTime += DateTime.Now - lastElapsed;
-            lastElapsed  = DateTime.Now;
+            lastElapsed = DateTime.Now;
 
             txtTimer.Text = Convert.ToString(
-                new TimeSpan(elapsedTime.Hours,elapsedTime.Minutes,elapsedTime.Seconds));
+                new TimeSpan(elapsedTime.Hours, elapsedTime.Minutes, elapsedTime.Seconds));
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -65,22 +65,22 @@ namespace DataEntryProject
         private void btnAccept_Click(object sender, EventArgs e)
         {
             string dataEntry;
-            if( txtName.Text.Equals("")||
+            if (txtName.Text.Equals("") ||
                 txtAddress.Text.Equals("") ||
                 txtCity.Text.Equals("") ||
                 txtState.Text.Equals("") ||
-                txtZip.Text.Equals("") )
+                txtZip.Text.Equals(""))
             {
                 MessageBox.Show("Each box must have an input", "Error Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtName.Focus();
                 return;
             }
-            dataEntry = txtName.Text    + "\r\n" +
+            dataEntry = txtName.Text + "\r\n" +
                         txtAddress.Text + "\r\n" +
-                        txtCity.Text    + "\r\n" +
-                        txtState.Text   + "\r\n" +
-                        txtZip.Text     + "\r\n" ;
+                        txtCity.Text + "\r\n" +
+                        txtState.Text + "\r\n" +
+                        txtZip.Text + "\r\n";
             MessageBox.Show(dataEntry, "Data Entry", MessageBoxButtons.OK);
             btnClear.PerformClick();
         }
@@ -89,9 +89,9 @@ namespace DataEntryProject
         {
             string textBoxSender = ((TextBox)sender).Name;
 
-            if(e.KeyChar == 13) // stands for "Enter"
+            if (e.KeyChar == 13) // stands for "Enter"
             {
-                switch(textBoxSender)
+                switch (textBoxSender)
                 {
                     case "txtName":
                         txtAddress.Focus();
@@ -111,6 +111,30 @@ namespace DataEntryProject
 
                 }
             }
+
+            if (textBoxSender.Equals("txtZip"))
+            {
+                if (e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == 8)
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+
+        private void mouseHoverForButons(object sender, EventArgs e)
+        {
+            ((Button)sender).BackColor = Color.Aqua;
+
+        }
+
+        private void mouseLeaveForButtons(object sender, EventArgs e)
+        {
+            ((Button)sender).BackColor = SystemColors.Control;
         }
     }
 }

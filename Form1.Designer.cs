@@ -85,6 +85,8 @@
             this.btnClear.Text = "&Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.MouseLeave += new System.EventHandler(this.mouseLeaveForButtons);
+            this.btnClear.MouseHover += new System.EventHandler(this.mouseHoverForButons);
             // 
             // btnAccept
             // 
@@ -96,6 +98,8 @@
             this.btnAccept.Text = "&Accept";
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
+            this.btnAccept.MouseLeave += new System.EventHandler(this.mouseLeaveForButtons);
+            this.btnAccept.MouseHover += new System.EventHandler(this.mouseHoverForButons);
             // 
             // txtAddress
             // 
